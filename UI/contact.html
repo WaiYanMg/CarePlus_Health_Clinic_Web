@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | CarePlus Clinic</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      
+      <a href="index.html" class="logo">
+         <img src="/Images/logo.png" alt="Clinic Logo" class="logo-img">
+         CarePlus Clinic</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <br><br>
+    <h2>Find Us</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=CCT+College+Dublin&hl=en&z=17&output=embed"
+        class="map-frame"
+        allowfullscreen
+        loading="lazy"
+        title="Map showing location of CCT College Dublin">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CarePlus Clinic | Dr. Wai Yan Maung</p>
+    <p>Contact: <a href="tel:+353XXXXXXXXX">+353 XX XXX XXXX</a></p>
+  </footer>
+
+ <script src="../Javascripts/script.js"></script>
+</body>
+</html>
